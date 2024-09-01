@@ -28,6 +28,7 @@ print(env.secret_key)
 
 Environment variables will be loaded from the system environment variables and a optional .env file in the current working directory or the parent directory of the script.
 
+
 The environment variables in the loaded ```.env``` file will not be set in to the ```os.environ``` dictionary when the load method is used. To add the environment variables from the loaded ```.env``` file to the ```os.environ``` dictionary set the ```set_env_vars```flag to True.
 
 ```python
@@ -52,11 +53,11 @@ print(os.environ['SECRET_KEY'])
 ### CLI Usage
 vidar exposes a command line interface to generate or update an existing ```.env``` file from a ```BaseEnvironment``` class
 ```bash
-python -m vidar -i ./path/to/module.py -cn BaseEnvironmentName
+python -m vidar -i ./path/to/module.py -cn BASE_ENVIRONMENT_CLASS_NAME
 ```
 
 the ```.env``` file will be written to the current working directory by default to change the output path use the ```-o``` flag
 
 ```bash
-python -m vidar -i ./path/to/module.py -cn <CONFIGURATION CLASS NAME> -o ./output/path
+python -m vidar -i ./path/to/module.py -cn BASE_ENVIRONMENT_CLASS_NAME -o ./output/path
 ```
