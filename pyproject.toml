@@ -1,0 +1,26 @@
+[project]
+name = "vidar"
+description = "Environment variables with Python type hints"
+version = "1.0.0-beta"
+authors = []
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic==2.8.2",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Framework :: Pydantic",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Homepage = "https://github.com/framdev/vidar"
+Documentation = "https://github.com/framdev/vidar"
+Repository = "https://github.com/framdev/vidar"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
